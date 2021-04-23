@@ -18,10 +18,6 @@ class App extends Component {
     todos: []
   }
 
-  componentDidMount() {
-    axios.get('https://jsonplaceholder.typicode.com/todos')
-    .then(res => this.setState({todos: res.data}))
-  }
 
   //Toggle Complete
   markComplete = (id) => {
